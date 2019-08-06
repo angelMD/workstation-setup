@@ -1,17 +1,21 @@
 echo
 echo "Installing Ruby tools and latest Ruby"
-cp files/.irbrc ~/.irbrc
-brew install readline
-eval "$(rbenv init -)"
-rbenv install $(rbenv install -l | grep -v - | tail -1) --skip-existing
-rbenv global $(rbenv install -l | grep -v - | tail -1)
+
+echo "gem: --no-document" >> ~/.gemrc
+
+# RVM
+
+gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -L https://get.rvm.io | bash -s 2.4.0 --auto-dotfiles --autolibs=enable --ruby
+source /etc/profile
+source ~/.rvm/scripts/rvm
+
+# Other dependencies
+
+brew install redis
+brew services start redis
+brew install elasticsearch
+brew services start elasticsearch
+brew install imagemagick
+
 gem install bundler
-rbenv rehash
-
-# guard against pre-installed rubymine
-brew cask install rubymine --force
-
-source ${MY_DIR}/scripts/common/download-pivotal-ide-prefs.sh
-pushd ~/workspace/pivotal_ide_prefs/cli
-./bin/ide_prefs install --ide=rubymine
-popd
