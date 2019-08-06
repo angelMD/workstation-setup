@@ -34,7 +34,7 @@ brew cask install jetbrains-toolbox --force # guard against pre-installed jetbra
 brew cask install visual-studio-code
 brew cask install atom
 
-apm install autosave language-javascript language-less language-json language-ruby language-sass language-yaml
+apm install autosave
 code --instal-extention streetsidesoftware.code-spell-checker castwide.solargraph sianglim.slim mauve.terraform naumovs.color-highlight
 
 # DB

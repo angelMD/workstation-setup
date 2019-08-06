@@ -12,6 +12,7 @@ This project automates the process of setting up a new AngelMD machine using a s
 Open up Terminal.app and run the following commands:
 
 ```sh
+git -v
 mkdir -p ~/workspace
 cd ~/workspace
 git clone https://github.com/angelMD/workstation-setup.git
