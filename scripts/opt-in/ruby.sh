@@ -19,3 +19,6 @@ brew services start elasticsearch
 brew install imagemagick
 
 gem install bundler
+
+apm install rebornix.ruby
+code --instal-extention rebornix.ruby
