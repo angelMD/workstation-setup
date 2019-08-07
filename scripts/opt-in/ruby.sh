@@ -14,7 +14,7 @@ source ~/.rvm/scripts/rvm
 
 brew install redis
 brew services start redis
-brew cask install homebrew/cask-version/adoptopenjdk8
+brew cask install homebrew/cask-versions/adoptopenjdk8
 brew install elasticsearch
 brew services start elasticsearch
 brew install imagemagick
