@@ -29,6 +29,8 @@ If you're setting up an engineering machine choose which languages to install:
 
 ```
 
+While we tried to make it as set-it-and-forget-it as we could, you will have a couple of places where you'll need to click OK on a dialog or enter your password. It should take about 30 minutes from the time you power on the laptop for the first time until you're ready to start cloning app repos.
+
 ### Designer Machine
 
 If you're setting up a design machine run the following:
