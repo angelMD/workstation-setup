@@ -24,7 +24,7 @@ cd workstation-setup
 If you're setting up an engineering machine choose which languages to install:
 
 ```sh
-# For Labs developers (remove unnecessary languages when running command)
+# remove unnecessary languages when running command
 ./setup.sh ruby node docker javascript
 
 ```
